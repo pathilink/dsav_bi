@@ -22,13 +22,17 @@ Extract the file:
 AdventureWorkDW_extract_NEW.csv.zip
 ```
 
+Change the decimals of the numerical data from "," to "." and the separator from ";" to ",".
+
+```example
+123,45;678,90 ➡️ 123.45,678.90 
+```
+
 In the PostgreSQL tool run the file:
 
 ```file
 BI.sql
 ```
-
-PS: In the numerical data I changed "," to "." and the separator ";" to ",".
 
 ## Metabase
 
@@ -53,12 +57,13 @@ PS: In the numerical data I changed "," to "." and the separator ";" to ",".
 <br>
 <br>
 
-2 - Create questions like
+2 - Create questions
+
+<img src="img/ask_a_question.png" alt="question" width="80%" />
 
 ```file
 metabase_questions.txt
 ```
-<img src="img/ask_a_question.png" alt="question" width="80%" />
 
 <br>
 <br>
