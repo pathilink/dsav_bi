@@ -74,6 +74,8 @@ metabase_questions.txt
 
 Access [dashboard](http://localhost:3000/public/dashboard/6f4b2e84-287a-482c-a6d4-91349a8037c3).
 
+<img src="img/dashboard.png" alt="question" width="100%" />
+
 <br>
 
 ## Made with
