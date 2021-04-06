@@ -1,4 +1,6 @@
-# Dashboard - Metabase
+# Dashboard 
+
+<img src="img/logo_m.png" alt="login" width="100%" />
 
 **Content**
 
