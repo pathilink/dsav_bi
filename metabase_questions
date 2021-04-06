@@ -1,0 +1,40 @@
+-- total sales amount
+SELECT sum(salesamount) 
+  FROM adventureworkdw;
+
+-- total discounts
+SELECT sum(discountamount) 
+  FROM adventureworkdw;
+
+-- average number of items per order
+SELECT count(orderquantity) / count(distinct(salesordernumber)) 
+  FROM adventureworkdw;
+
+-- number of customers
+SELECT count(distinct(customerkey)) 
+  FROM adventureworkdw;
+
+-- sales_per_month [graph]
+SELECT count(salesordernumber) as sales_per_month, date_part('month', orderdate) as month, date_part('year', orderdate) as year
+  FROM adventureworkdw 
+ GROUP BY date_part('month', orderdate),  date_part('year', orderdate)
+ ORDER BY date_part('month', orderdate),  date_part('year', orderdate)
+;
+
+-- best selling products by revenue [table]
+SELECT englishproductname AS product_name, COUNT(productalternatekey) AS total_units_sold, SUM(salesamount) AS total_amount_sold
+  FROM adventureworkdw 
+ GROUP BY englishproductname, salesamount, productalternatekey
+ ORDER BY salesamount DESC
+;
+
+-- sales amount & total orders - by product category
+SELECT modelname, 
+       SUM(salesamount) as total_sales_amount, -- total sales amount by product category
+       COUNT(salesordernumber) as total_orders -- total orders by product category
+  FROM adventureworkdw
+ GROUP BY modelname
+;
+
+
+
