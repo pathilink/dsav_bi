@@ -45,27 +45,35 @@ BI.sql
 ```browser
 //localhost:3000
 ```
-<img src="img/metabase_login.png" alt="login" width="80%" />
+<img src="img/metabase_login.png" alt="login" width="100%" />
 
 <br>
 <br>
 
 1 - Connect PostgreSQL to Metabase.
 
-<img src="img/connect_db.png" alt="connect database" width="80%" />
+<img src="img/connect_db.png" alt="connect database" width="100%" />
 
 <br>
 <br>
 
 2 - Create questions
 
-<img src="img/ask_a_question.png" alt="question" width="80%" />
+<img src="img/ask_a_question.png" alt="question" width="100%" />
+
+<br>
+<br>
 
 ```file
 metabase_questions.txt
 ```
 
 <br>
+
+3 - Final work
+
+Access [dashboard](http://localhost:3000/public/dashboard/6f4b2e84-287a-482c-a6d4-91349a8037c3).
+
 <br>
 
 ## Made with
